@@ -30,3 +30,7 @@ Before public launch:
 4. Add approved logo, photographs, privacy policy, and legal disclaimer.
 5. Decide how this site relates to existing disability content on the firm’s other domains.
 6. Complete attorney-advertising, accessibility, privacy, and user testing.
+
+
+Things to add:
+FAQ, Contact Form, fix padding, Meet the Attorneys, Field office locator, Links to ssa
