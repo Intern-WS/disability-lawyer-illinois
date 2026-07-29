@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactBand from "../../components/ContactBand.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="About Williams & Swee, Ltd. | DisabilityLawyerIllinois" description="DisabilityLawyerIllinois is a website of Williams & Swee, Ltd., an Illinois law firm helping with Social Security disability matters." path="about/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / About</p><p class="eyebrow">The firm behind this website</p><h1>Williams &amp; Swee, Ltd.</h1><p class="lede">DisabilityLawyerIllinois belongs to Williams &amp; Swee, Ltd.</p></div></header>
+  <div class="section section-narrow">
+    <h2>Focused disability help</h2><p>This website focuses on the firm’s work involving Supplemental Security Income, Social Security Disability Insurance, denied claims, and hearings.</p>
+    <h2>About this demo</h2><p>The production website should add attorney biographies, verified office details, service areas, languages, accommodations, and approved photographs.</p>
+    <h2>Learn more about the firm</h2><p>Visit the <a href="https://williamsswee.com/">main Williams &amp; Swee, Ltd. website</a> for information about the firm’s other practice areas.</p>
+  </div>
+  <ContactBand />
+</BaseLayout>

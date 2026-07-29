@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactBand from "../../components/ContactBand.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="SSDI Help in Illinois | Williams & Swee, Ltd." description="Plain-language information about Social Security Disability Insurance and how Williams & Swee, Ltd. helps with SSDI claims." path="ssdi/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / SSDI</p><p class="eyebrow">Social Security Disability Insurance</p><h1>Help with an SSDI claim</h1><p class="lede">SSDI may help people whose disability keeps them from working and who have enough work history.</p></div></header>
+  <div class="section section-narrow">
+    <h2>What is SSDI?</h2>
+    <p>SSDI stands for Social Security Disability Insurance. Social Security looks at your work history and whether your condition meets its disability rules.</p>
+    <h2>Information that may matter</h2>
+    <ul class="plain-list"><li>Your recent jobs and work duties.</li><li>When you stopped working or reduced your hours.</li><li>Your medical treatment and medications.</li><li>How your condition limits physical or mental activities.</li></ul>
+    <h2>If Social Security says no</h2>
+    <p>You may be able to appeal. An appeal asks Social Security to review its decision. Deadlines apply, so act promptly.</p>
+    <p><a href={`${base}disability-appeals/`.replace(/\/+/g, "/")}>Learn what may happen after a denial.</a></p>
+    <p>Last reviewed for demo: July 29, 2026. Source: <a href="https://www.ssa.gov/disability">Social Security Administration disability information</a>.</p>
+  </div>
+  <ContactBand heading="Questions about an SSDI claim?" />
+</BaseLayout>

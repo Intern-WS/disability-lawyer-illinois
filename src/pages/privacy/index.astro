@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Privacy | DisabilityLawyerIllinois" description="Demo privacy information for the DisabilityLawyerIllinois website of Williams & Swee, Ltd." path="privacy/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / Privacy</p><h1>Privacy</h1><p class="lede">This demo does not collect information through a contact form.</p></div></header>
+  <div class="section section-narrow">
+    <h2>Demo website</h2><p>This static demo does not use advertising trackers, create user accounts, or store form submissions.</p>
+    <h2>Before production</h2><p>Williams &amp; Swee, Ltd. should approve a complete privacy notice that accurately describes hosting logs, analytics, cookies, contact forms, third-party services, retention, and user choices.</p>
+    <h2>Protect sensitive information</h2><p>Do not send Social Security numbers, medical records, dates of birth, or other highly sensitive information through an unapproved website form.</p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Legal Disclaimer | DisabilityLawyerIllinois" description="Legal disclaimer for the DisabilityLawyerIllinois demo website of Williams & Swee, Ltd." path="legal-disclaimer/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / Legal disclaimer</p><h1>Legal disclaimer</h1><p class="lede">This demo provides general information. It is not legal advice.</p></div></header>
+  <div class="section section-narrow">
+    <h2>No attorney-client relationship</h2><p>Reading this website or contacting the firm does not create an attorney-client relationship. The firm must agree to represent you.</p>
+    <h2>No guarantee</h2><p>Past outcomes do not guarantee a similar result. No website can predict the result of a claim.</p>
+    <h2>Information may change</h2><p>Laws, rules, deadlines, and agency procedures can change. Do not rely on this demo for a deadline or legal decision.</p>
+    <div class="callout">Illinois counsel should review and approve this disclaimer, all attorney-advertising language, fee statements, and every factual claim before publication.</div>
+  </div>
+</BaseLayout>

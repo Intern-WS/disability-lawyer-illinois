@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Contact Williams & Swee, Ltd. | DisabilityLawyerIllinois" description="Contact Williams & Swee, Ltd. about an Illinois SSI, SSDI, denied claim, appeal, or disability hearing." path="contact/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / Contact</p><p class="eyebrow">Choose what works for you</p><h1>Contact Williams &amp; Swee, Ltd.</h1><p class="lede">Tell the firm where you are in the disability process.</p></div></header>
+  <div class="section section-narrow">
+    <div class="contact-card">
+      <h2>Call the firm</h2>
+      <p><a class="button" href="tel:+13098274371">Call (309) 827-4371</a></p>
+      <p>If you use a relay service, you may use it to call this number.</p>
+    </div>
+    <h2>Before you contact us</h2>
+    <p>It may help to have your Social Security letters nearby. You do not need to understand every paper before you call.</p>
+    <div class="callout"><strong>Please protect your privacy.</strong> Do not send a Social Security number, medical records, date of birth, or other highly sensitive information through an unapproved form.</div>
+    <h2>Demo form note</h2>
+    <p>This static demo does not send or store form information. A production form should be added only after the firm approves its privacy, security, and record-handling process.</p>
+    <p>Contacting the firm does not create an attorney-client relationship. Do not send confidential information until the firm agrees to represent you.</p>
+  </div>
+</BaseLayout>

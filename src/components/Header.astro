@@ -1,0 +1,38 @@
+---
+const base = import.meta.env.BASE_URL;
+const link = (path: string) => `${base}${path}`.replace(/\/+/g, "/");
+---
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="demo-notice" role="note">
+  Demo website. Content and contact details require review by Williams &amp; Swee, Ltd.
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href={link("")} aria-label="Disability Lawyer Illinois home">
+      <span class="brand-name">DisabilityLawyerIllinois</span>
+      <span class="brand-owner">A website of Williams &amp; Swee, Ltd.</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span aria-hidden="true">☰</span> Menu
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
+      <a href={link("ssi/")}>SSI</a>
+      <a href={link("ssdi/")}>SSDI</a>
+      <a href={link("disability-appeals/")}>Denied claims</a>
+      <a href={link("about/")}>About</a>
+      <a href={link("contact/")}>Contact</a>
+    </nav>
+    <a class="button header-call" href="tel:+13098274371" aria-label="Call Williams and Swee at 309 827 4371">
+      <span aria-hidden="true">☎</span> Call (309) 827-4371
+    </a>
+  </div>
+</header>
+<script>
+  const button = document.querySelector<HTMLButtonElement>(".menu-button");
+  const nav = document.querySelector<HTMLElement>(".primary-nav");
+  button?.addEventListener("click", () => {
+    const open = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!open));
+    nav?.classList.toggle("is-open", !open);
+  });
+</script>

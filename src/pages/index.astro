@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactBand from "../components/ContactBand.astro";
+const base = import.meta.env.BASE_URL;
+const link = (path: string) => `${base}${path}`.replace(/\/+/g, "/");
+---
+<BaseLayout title="Illinois SSI and SSDI Lawyers | Williams & Swee, Ltd." description="Williams & Swee, Ltd. helps Illinois residents understand SSI, SSDI, denied claims, hearings, and disability appeals.">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Williams &amp; Swee, Ltd.</p>
+      <h1>Social Security Disability help in Illinois</h1>
+      <p class="lede">Clear help with SSI, SSDI, and denied claims.</p>
+      <div class="button-row">
+        <a class="button" href="tel:+13098274371"><span aria-hidden="true">☎</span> Call (309) 827-4371</a>
+        <a class="button button-outline" href={link("disability-appeals/")}>My claim was denied</a>
+      </div>
+    </div>
+  </section>
+  <section class="next-steps" aria-labelledby="next-heading">
+    <div class="step-panel">
+      <h2 id="next-heading">What happens next</h2>
+      <div class="step-grid">
+        <div class="step"><strong>Call us</strong></div>
+        <div class="step"><strong>Tell us what happened</strong></div>
+        <div class="step"><strong>Learn your next step</strong></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="help-heading">
+    <p class="eyebrow">Start where you are</p>
+    <h2 id="help-heading">How can we help?</h2>
+    <div class="card-grid">
+      <article class="card"><h3>I need to apply</h3><p>Learn about the two main Social Security disability programs.</p><a class="text-link" href={link("how-we-help/")}>See how we help</a></article>
+      <article class="card"><h3>My claim was denied</h3><p>A denial may not be the end of your claim. Learn about asking for a review.</p><a class="text-link" href={link("disability-appeals/")}>Learn about appeals</a></article>
+      <article class="card"><h3>I have a hearing</h3><p>Learn what may happen before and during a disability hearing.</p><a class="text-link" href={link("how-we-help/")}>Learn about hearings</a></article>
+    </div>
+  </section>
+  <section class="section-soft">
+    <div class="inner section">
+      <p class="eyebrow">Two different programs</p>
+      <h2>SSI and SSDI</h2>
+      <div class="compare">
+        <article><h3>SSDI</h3><p>Social Security Disability Insurance is usually based on your work history. You must also meet Social Security’s disability rules.</p><a href={link("ssdi/")}>Learn about SSDI</a></article>
+        <article><h3>SSI</h3><p>Supplemental Security Income is usually based on limited income and resources. Work history is not required in the same way.</p><a href={link("ssi/")}>Learn about SSI</a></article>
+      </div>
+      <p class="callout">The rules can be hard to understand. Williams &amp; Swee, Ltd. can help you learn which program may apply.</p>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="firm-heading">
+    <p class="eyebrow">The firm behind this website</p>
+    <h2 id="firm-heading">Williams &amp; Swee, Ltd.</h2>
+    <p>DisabilityLawyerIllinois is a website of Williams &amp; Swee, Ltd. The firm helps people with Social Security disability matters in Illinois.</p>
+    <p><a href={link("about/")}>Learn about the firm</a></p>
+  </section>
+  <ContactBand />
+</BaseLayout>

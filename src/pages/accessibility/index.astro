@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Accessibility | DisabilityLawyerIllinois" description="Accessibility information for the DisabilityLawyerIllinois website of Williams & Swee, Ltd." path="accessibility/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / Accessibility</p><h1>Accessibility</h1><p class="lede">We want this website to be easy to read, understand, and use.</p></div></header>
+  <div class="section section-narrow">
+    <h2>How this demo helps</h2>
+    <ul class="plain-list"><li>Large text and strong color contrast.</li><li>Consistent menus and page structure.</li><li>Keyboard access and visible focus.</li><li>Short paragraphs and plain language.</li><li>No pop-ups, autoplay, flashing, or time limits.</li><li>Support for reduced-motion settings.</li></ul>
+    <h2>Ask for another format</h2><p>If a page is hard to use, call <a href="tel:+13098274371">(309) 827-4371</a>. Explain what you need and which page caused trouble.</p>
+    <p>The production site should be tested with disabled users and reviewed against WCAG 2.2 Level AA before launch.</p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,15 @@
+---
+const { heading = "Talk with the firm about your next step" } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<section class="contact-band" aria-labelledby="contact-band-heading">
+  <div>
+    <p class="eyebrow">Clear help. No pressure.</p>
+    <h2 id="contact-band-heading">{heading}</h2>
+    <p>Tell us where you are in the Social Security disability process.</p>
+  </div>
+  <div class="button-row">
+    <a class="button" href="tel:+13098274371">Call (309) 827-4371</a>
+    <a class="button button-light" href={`${base}contact/`.replace(/\/+/g, "/")}>Contact options</a>
+  </div>
+</section>

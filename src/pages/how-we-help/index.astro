@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactBand from "../../components/ContactBand.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="How We Help With Disability Claims | Williams & Swee, Ltd." description="See how Williams & Swee, Ltd. may help with SSI, SSDI, disability applications, appeals, and hearings." path="how-we-help/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / How we help</p><p class="eyebrow">Support at each stage</p><h1>How we may help</h1><p class="lede">You tell us where you are. We explain what may come next.</p></div></header>
+  <div class="section section-narrow">
+    <h2>Applying for benefits</h2><p>We can discuss the programs, the information Social Security may need, and questions you have about the process.</p>
+    <h2>After a denial</h2><p>We can review the decision, identify the appeal stage, and discuss what information may support your claim.</p>
+    <h2>Before a hearing</h2><p>We may help organize the record, prepare you for questions, and explain what to expect at a hearing.</p>
+    <h2>Clear communication</h2><p>Please tell us what helps you communicate. You may ask for slower explanations, written steps, a support person, or another reasonable accommodation.</p>
+    <div class="callout">A call does not guarantee that the firm can represent you. The firm must review the matter and check for conflicts first.</div>
+  </div>
+  <ContactBand />
+</BaseLayout>

@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactBand from "../../components/ContactBand.astro";
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Denied Disability Claim in Illinois | Williams & Swee, Ltd." description="Learn the basic steps after Social Security denies an SSI or SSDI claim and how Williams & Swee, Ltd. may help." path="disability-appeals/">
+  <header class="page-hero"><div class="section section-narrow"><p class="breadcrumb"><a href={base}>Home</a> / Denied claims</p><p class="eyebrow">You may have another step</p><h1>Was your disability claim denied?</h1><p class="lede">A denial may not be the end of your claim. You may be able to ask Social Security to review the decision.</p></div></header>
+  <div class="section section-narrow">
+    <div class="callout"><strong>Do not ignore the denial letter.</strong> It tells you what Social Security decided and how long you have to respond.</div>
+    <h2>What to do now</h2>
+    <ol class="plain-list"><li>Keep the full denial letter and envelope.</li><li>Read the deadline shown in the letter.</li><li>Write down the date you received it.</li><li>Gather recent medical and work information.</li><li>Ask for legal help promptly if you want it.</li></ol>
+    <h2>Common appeal stages</h2>
+    <p>The stages may include reconsideration, a hearing with an administrative law judge, Appeals Council review, and federal court review. Not every claim goes through every stage.</p>
+    <h2>How Williams &amp; Swee may help</h2>
+    <p>The firm may review the denial, explain the next stage, help develop the record, prepare you for a hearing, and represent you if the firm accepts the case.</p>
+    <p>Last reviewed for demo: July 29, 2026. Source: <a href="https://www.ssa.gov/apply/appeal-decision-we-made">Social Security Administration appeal guidance</a>.</p>
+  </div>
+  <ContactBand heading="Talk about a denied claim" />
+</BaseLayout>
